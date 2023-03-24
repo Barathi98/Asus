@@ -1,0 +1,39 @@
+
+
+<!-- <div class="container"> -->
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Contact</th>
+            <th scope="col">Email</th>
+            <th scope="col">Address</th>
+            <th scope="col">Blood_group</th>
+            <th scope="col">Designation</th>
+            <th scope="col">Salary</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let employee1 of employee">
+            
+            <td>{{employee1.employeeId}}</td>
+            <td>{{employee1.employeeFirstName}}</td>
+            <td>{{employee1.employeeLastName}}</td>
+            <td>{{employee1.employeeMobileNumber}}</td>
+            <td>{{employee1.employeeEmail}}</td>
+            <td>{{employee1.employeeeAddress}}</td>
+            <td>{{employee1.employeeBloodGroup}}</td>
+            <td>{{employee1.employeeDesignation}}</td>
+            <td>{{employee1.employeeSalary}}</td>
+            <td><button class="btn btn-success" (click)="updateEmployee(employee1.employeeId)" >Update</button>|<button class="btn btn-danger" (click)="deleteEmployee(employee1.employeeId)" >Delete</button></td>
+          </tr>
+         
+        </tbody>
+      </table>
+
+<!-- </div> -->
+

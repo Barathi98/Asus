@@ -1,0 +1,47 @@
+<h1 class="text-center">Employee Registration</h1>
+<div class="container">
+<div class="card" style= "padding: 20px;">
+  <form  #regData="ngForm"  (ngSubmit) ="register(regData)">
+      <div class="form-group">
+         
+            <input type="text" placeholder="Employee First Name" class="form-control" name="employeeFirstName"  id="employeeFirstName" ngModel  #empfname="ngModel"/>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Employee Last Name"  name="employeeLastName"  id="employeeLastName"  ngModel #emplname="ngModel" />
+  </div>
+  <div class="form-group">
+ 
+    <input type="text" class="form-control" placeholder="Employee Contact Number"  name="employeeMobileNumber"  id="employeeMobileNumber" ngModel #empcontact="ngModel"/>
+</div>
+
+<div class="form-group">
+
+    <input type="email" class="form-control" placeholder="Employee Email"  name="employeeEmail"  id="employeeEmail" ngModel #empEmail="ngModel" />
+</div>
+
+<div class="form-group">
+   
+    <input type="text" class="form-control" placeholder="Employee Adderess" name="employeeeAddress"  id="employeeeAddress" ngModel #empAddress="ngModel" />
+</div>
+
+<div class="form-group">
+    <input type="text" class="form-control" placeholder="Employee Blood Group"  name="employeeBloodGroup"  id="employeeBloodGroup"  ngModel #empBloodgroup="ngModel" />
+</div>
+
+<div class="form-group">
+
+    <input type="text" class="form-control" placeholder="Employee Deisgnation"  name="employeeDesignation"  id="employeeDesignation"  ngModel #empDesignation="ngModel" />
+</div>
+
+<div class="form-group">
+ 
+    <input type="text" class="form-control" placeholder="Employee Salary"  name="employeeSalary"  id="employeeSalary"  ngModel #empSalary="ngModel" />
+</div>
+<div class="form-group">
+   
+    <input type="submit" value="Submit" class="btn btn-success w-100" />
+</div>
+  </form>
+     
+</div>
+</div>

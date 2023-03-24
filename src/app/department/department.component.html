@@ -1,0 +1,24 @@
+<div class="container">
+<table class="table">
+    <thead>
+      <tr>
+        
+        <th scope="col">Department Id</th>
+        <th scope="col">Department Name</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let department1 of department">
+            
+            <td>{{department1.departmentId}}</td>
+            <td>{{department1.departmentName}}</td>
+
+            <td><button class="btn btn-success" (click)="updateDepartment(department1.departmentId)" >Update</button>|<button class="btn btn-danger" (click)="deleteDepartment(department1.departmentId)" >Delete</button></td>
+            
+      </tr>
+      
+ 
+      
+    </tbody>
+  </table>
+</div>

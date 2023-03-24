@@ -1,0 +1,26 @@
+<div class="container">
+    <table class="table">
+        <thead>
+          <tr>
+            
+            <th scope="col">Project Id</th>
+            <th scope="col">Project Name</th>
+            <th scope="col">Project Lead Name</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let project1 of project">
+                
+                <td>{{project1.projectId}}</td>
+                <td>{{project1.projectTitle}}</td>
+                <td>{{project1.projectLeadName}}</td>
+    
+                <td><button class="btn btn-success" (click)="updateProject(project1.projectId)" >Update</button>|<button class="btn btn-danger" (click)="deleteProject(project1.projectId)" >Delete</button></td>
+                
+          </tr>
+          
+     
+          
+        </tbody>
+      </table>
+    </div>
